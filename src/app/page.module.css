@@ -95,6 +95,12 @@
   z-index: -1;
 }
 
+.button {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+}
+
 .center::before,
 .center::after {
   content: '';
