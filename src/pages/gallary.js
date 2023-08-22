@@ -37,10 +37,10 @@ useEffect(()=>{
         <ListSubheader component="div" onClick={()=> window.open("http://localhost:3000/", "_blank")}>{category}</ListSubheader>
       </ImageListItem>
       {categoryImages.map((item) => (
-        <ImageListItem key={item.imgURL}>
+        <ImageListItem key={item.imagesUrl}>
           <img
-            src={item.imgURL}
-            srcSet={item.imgURL}
+            src={item.imagesUrl}
+            srcSet={item.imagesUrl}
             alt={item.name}
             loading="lazy"
           />

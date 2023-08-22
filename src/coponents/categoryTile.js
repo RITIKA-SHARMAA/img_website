@@ -5,16 +5,16 @@ export default function CatTile({value}) {
 
     return(
         <Card sx={{ maxWidth: 345}}> 
-        <CardActionArea onClick={()=> window.open("http://localhost:3000/gallary?catId="+value?.id+"&categoryName="+value?.categoryName, "_blank")}>
+        <CardActionArea onClick={()=> window.open("http://localhost:3000/gallary?catId="+value?.id+"&categoryName="+value?.cat_name, "_blank")}>
           <CardMedia
             component="img"
             height="300"
-            image={value?.thumbnailImageUrl}
-            alt= {value?.categoryName}
+            image={value?.img_link}
+            alt= {value?.cat_name}
           />
           <CardContent>
             <Typography gutterBottom variant="h5">
-            {value?.id}. {value?.categoryName}
+            {value?.id}. {value?.cat_name}
             </Typography>
           </CardContent>
         </CardActionArea>
